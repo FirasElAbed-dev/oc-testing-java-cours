@@ -142,19 +142,19 @@ public class CalculatorTest {
 		assertEquals(expectedDigits, actualDigits);
 	}
 
-	@Test
-	public void listDigits_shouldReturnsTheListOfDigits_ofNegativeInteger() {
-		final int number = -124432;
-		final Set<Integer> actualDigits = calculatorUnderTest.digitsSet(number);
-		assertThat(actualDigits).containsExactlyInAnyOrder(1, 2, 3, 4);
-	}
-
-	@Test
-	public void listDigits_shouldReturnsTheListOfZero_ofZero() {
-		final int number = 0;
-		final Set<Integer> actualDigits = calculatorUnderTest.digitsSet(number);
-		assertThat(actualDigits).containsExactly(0);
-	}
+//	@Test
+//	public void listDigits_shouldReturnsTheListOfDigits_ofNegativeInteger() {
+//		final int number = -124432;
+//		final Set<Integer> actualDigits = calculatorUnderTest.digitsSet(number);
+//		assertThat(actualDigits).containsExactlyInAnyOrder(1, 2, 3, 4);
+//	}
+//
+//	@Test
+//	public void listDigits_shouldReturnsTheListOfZero_ofZero() {
+//		final int number = 0;
+//		final Set<Integer> actualDigits = calculatorUnderTest.digitsSet(number);
+//		assertThat(actualDigits).containsExactly(0);
+//	}
 
 	@Disabled("Stoppé car cela échoue tous les mardis")
 	@Test
@@ -181,17 +181,17 @@ public class CalculatorTest {
 
 	}
 
-	@Test
-	public void digitsSetOfFact12_shouldReturnsTheCorrectAnswser() {
-		// GIVEN
-		final int cacheFactorial = 479001600;
-
-		// WHEN
-		final Set<Integer> actualDigits = calculatorUnderTest.digitsSet(cacheFactorial);
-
-		// THEN
-		assertThat(actualDigits).containsExactlyInAnyOrder(0, 1, 4, 6, 7, 9);
-	}
+//	@Test
+//	public void digitsSetOfFact12_shouldReturnsTheCorrectAnswser() {
+//		// GIVEN
+//		final int cacheFactorial = 479001600;
+//
+//		// WHEN
+//		final Set<Integer> actualDigits = calculatorUnderTest.digitsSet(cacheFactorial);
+//
+//		// THEN
+//		assertThat(actualDigits).containsExactlyInAnyOrder(0, 1, 4, 6, 7, 9);
+//	}
 
 	@Test
 	public void multiplyAndDivide_shouldBeIdentity() {
