@@ -128,19 +128,19 @@ public class CalculatorTest {
 		// ...
 	}
 
-	@Test
-	public void listDigits_shouldReturnsTheListOfDigits_ofPositiveInteger() {
-		// GIVEN
-		final int number = 95897;
-
-		// WHEN
-		final Set<Integer> actualDigits = calculatorUnderTest.digitsSet(number);
-
-		// THEN
-		assertThat(actualDigits).containsExactlyInAnyOrder(9, 5, 8, 7);
-		final Set<Integer> expectedDigits = Stream.of(5, 7, 8, 9).collect(Collectors.toSet());
-		assertEquals(expectedDigits, actualDigits);
-	}
+//	@Test
+//	public void listDigits_shouldReturnsTheListOfDigits_ofPositiveInteger() {
+//		// GIVEN
+//		final int number = 95897;
+//
+//		// WHEN
+//		final Set<Integer> actualDigits = calculatorUnderTest.digitsSet(number);
+//
+//		// THEN
+//		assertThat(actualDigits).containsExactlyInAnyOrder(9, 5, 8, 7);
+//		final Set<Integer> expectedDigits = Stream.of(5, 7, 8, 9).collect(Collectors.toSet());
+//		assertEquals(expectedDigits, actualDigits);
+//	}
 
 //	@Test
 //	public void listDigits_shouldReturnsTheListOfDigits_ofNegativeInteger() {
